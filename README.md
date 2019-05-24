@@ -1,9 +1,8 @@
-# 개발 환경 가이드
+# Front-end Dev Guide
 
 본 프로젝트 Front-end 개발자를 위한 문서 이며 개발 환경 설정에 대한 내용을 담고 있습니다.
 
-
-## 개발 환경
+### 개발 환경
 
 원활한 작업환경과 가이드 문서 편집을 위해 [Visual Studio Code](https://code.visualstudio.com/) 에디터와 다음 플러그인 설치를 권장 합니다.
 
@@ -19,7 +18,7 @@
 - Markdown PDF
 ```
 
-## 설치 환경
+### 설치 환경
 
 다음 환경에서 정상적인 개발이 가능합니다.
 
@@ -37,7 +36,7 @@ gulp-cli 설치 전 이면 터미널에서 다음 코드를 실행 합니다.
 npm install --global gulp-cli
 ```
 
-## 설치
+### 설치
 
 설치 환경에 문제가 없다면 터미널에서 다음 코드를 실행 해 설치 합니다.
 
@@ -45,7 +44,7 @@ npm install --global gulp-cli
 npm install
 ```
 
-## 폴더 구조
+### 폴더 구조
 
 설치를 완료하면 다음과 같은 폴더 및 파일 구조를 갖게 됩니다.
 
@@ -76,7 +75,7 @@ project
 └───dist                // 산출물 소스 폴더
 ```
 
-## 실행
+### 실행
 
 터미널에서 다음 명령으로 개발을 시작 합니다.
 
@@ -85,6 +84,7 @@ gulp            // 웹서버 실행 및 index 오픈
 gulp build      // dist 폴더에 배포용 소스를 만듭니다.
 gulp clean      // dist 폴더를 비웁니다.
 ```
+
 ___
 
 궁금 한 사항은 [support@ui-lab.co.kr](mailto:support@ui-lab.co.kr) 로 문의 바랍니다. 😀
