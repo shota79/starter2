@@ -3,7 +3,6 @@
         "@fortawesome/fontawesome-free": "^5.8.1",
         "browser-sync": "latest",
         "del": "^4.1.0",
-        "gulp": "latest",
         "gulp-cache": "^1.1.1",
         "gulp-clean-css": "latest",
         "gulp-concat": "latest",
@@ -13,5 +12,9 @@
         "gulp-sass": "latest",
         "gulp-sourcemaps": "^2.6.5",
         "ssi": "^0.3.0"
+    },
+    "dependencies": {
+        "gulp": "^4.0.2",
+        "node-sass": "^4.12.0"
     }
 }
