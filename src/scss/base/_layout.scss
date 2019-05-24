@@ -1,0 +1,174 @@
+#{$plugin} {
+    padding: 20px;
+    background-color: #F2F3F8;
+    & + &:before {
+        margin-bottom: 20px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border-top: 1px dashed #999;
+        content: '';
+    }
+    &__flex {
+        margin: 0 -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: top;
+        align-items: top;
+        &-column {
+            padding: 0 20px;
+            width: 50%;
+            box-sizing: border-box;
+            & + & {
+                @include screenSizeMobile {
+                    margin-top: 20px;
+                }
+            }
+            @include screenSizeMobile {
+                width: 100%;
+            }
+        }
+    }
+    &__title {
+        font-size: 24px;
+    }
+    &__sub-title {
+        margin-top: 30px;
+        font-size: 19px;
+        & + #{$plugin}__description {
+            margin-top: 15px;
+        }
+    }
+    &__description {
+        font-size: 15px;
+        margin: 30px 0 10px;
+        font-weight: 500;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+#{$pluginName} {
+    &__header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        box-sizing: border-box;
+        background-color: #2c2e3e;
+        z-index: 100;
+        &-ctrl {
+            display: none;
+        }
+        @include screenSizeMobile {
+            @include css3-prefix( transform, translate(0, -100%) );
+            bottom: auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            @include css3-prefix( transition, transform .2s );
+            &.is-active {
+                @include css3-prefix( transform, translate(0, 0) );
+            }
+        }
+    }
+    &__logo {
+        padding: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+    &__menu-button {
+        display: none;
+        @include screenSizeMobile {
+            display: block;
+            position: absolute;
+            bottom: -40px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: $point-color-default;
+            border: none;
+            .fa-bars {
+                font-size: 18px;
+                color: $white;
+            }
+        }
+    }
+    &__nav {
+        &-status {
+            display: none;
+        }
+        &-anchor {
+            padding: 10px 20px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #9b9ca3;
+        }
+    }
+    &__contents {
+        padding-left: 200px;
+        width: calc( 100% - 200px );
+        @include screenSizeMobile {
+            padding-left: 0;
+            width: 100%;
+        }
+    }
+    &-options {
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #fff;
+        &__name {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+        }
+        &__title {
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &__ul {
+            margin-left: 10px;
+        }
+        &__li {
+            font-size: 15px;
+            font-weight: 400;
+            &:before {
+                margin-right: 5px;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                background-color: $point-color-hover;
+                content: '';
+            }
+            li {
+                font-weight: 400;
+                &:before {
+                    box-sizing: border-box;
+                    border: 1px solid $point-color-hover;
+                    background-color: $white;
+                }
+                &:last-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__bold {
+            font-weight: 700;
+        }
+    }
+    &-result {
+        padding: 15px;
+        min-height: 150px;
+        box-sizing: border-box;
+        background-color: $white;
+    }
+}

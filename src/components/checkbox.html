@@ -1,0 +1,95 @@
+<section id="checkbox" class="plugin">
+  <h1>Checkbox</h1>
+  <p class="plugin__description">기본 체크박스는 HTML, CSS로만 작동합니다.</p>
+  <!-- CODE -->
+  <p class="plugin__description">- CODE / 기본</p>
+  <div class="code">
+    <div class="code__language"><i class="fas fa-code"></i> HTML</div>
+    <pre>
+<code class="html">
+    &lt;label class="pualugin-checkbox"&gt;
+      &lt;input type="checkbox" class="pualugin-checkbox__input"&gt;
+      &lt;i class="pualugin-checkbox__icon fas fa-check"&gt;&lt;/i&gt;
+      &lt;span class="pualugin-checkbox__text"&gt;동의합니다.&lt;/span&gt;
+    &lt;/label&gt;
+</code>
+</pre>
+  </div>
+  <!-- CODE -->
+
+  <!-- RESULT -->
+  <p class="plugin__description">- RESULT</p>
+  <div class="pualugin-result">
+    <label class="pualugin-checkbox">
+      <input type="checkbox" class="pualugin-checkbox__input">
+      <i class="pualugin-checkbox__icon fas fa-check"></i>
+      <span class="pualugin-checkbox__text">동의합니다.</span>
+    </label>
+  </div>
+  <!-- //RESULT -->
+
+  <!-- CODE -->
+  <p class="plugin__description">전체선택 기능이 필요한 경우 아래와 같이 작성합니다.</p>
+  <div class="code">
+    <div class="code__language"><i class="fas fa-code"></i> HTML</div>
+    <pre>
+<code class="html">
+  &lt;div data-element="checkbox"&gt;
+    &lt;label class="pualugin-checkbox"&gt;
+      &lt;!-- 일부 체크박스를 비활성화 해야 하는 경우 disabled 속성을 추가합니다. --&gt;
+      &lt;input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input" disabled&gt;
+      &lt;i class="pualugin-checkbox__icon fas fa-check"&gt;&lt;/i&gt;
+      &lt;span class="pualugin-checkbox__text"&gt;동의합니다.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="pualugin-checkbox"&gt;
+      &lt;input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"&gt;
+      &lt;i class="pualugin-checkbox__icon fas fa-check"&gt;&lt;/i&gt;
+      &lt;span class="pualugin-checkbox__text"&gt;동의합니다.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="pualugin-checkbox"&gt;
+      &lt;input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input"&gt;
+      &lt;i class="pualugin-checkbox__icon fas fa-check"&gt;&lt;/i&gt;
+      &lt;span class="pualugin-checkbox__text"&gt;동의합니다.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="pualugin-checkbox"&gt;
+      &lt;input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__all"&gt;
+      &lt;i class="pualugin-checkbox__icon fas fa-check"&gt;&lt;/i&gt;
+      &lt;span class="pualugin-checkbox__text"&gt;전체선택&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+</code>
+  </pre>
+  </div>
+  <!-- CODE -->
+
+  <!-- RESULT -->
+  <p class="plugin__description">- RESULT</p>
+  <div class="pualugin-result">
+    <div data-element="checkbox">
+      <label class="pualugin-checkbox">
+        <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input" disabled>
+        <i class="pualugin-checkbox__icon fas fa-check"></i>
+        <span class="pualugin-checkbox__text">동의합니다.</span>
+      </label>
+      <br>
+      <label class="pualugin-checkbox">
+        <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input">
+        <i class="pualugin-checkbox__icon fas fa-check"></i>
+        <span class="pualugin-checkbox__text">동의합니다.</span>
+      </label>
+      <br>
+      <label class="pualugin-checkbox">
+        <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__input">
+        <i class="pualugin-checkbox__icon fas fa-check"></i>
+        <span class="pualugin-checkbox__text">동의합니다.</span>
+      </label>
+      <br>
+      <label class="pualugin-checkbox">
+        <input type="checkbox" class="pualugin-checkbox__input" data-element="checkbox__all">
+        <i class="pualugin-checkbox__icon fas fa-check"></i>
+        <span class="pualugin-checkbox__text">전체선택</span>
+      </label>
+    </div>
+  </div>
+  <!-- //RESULT -->
+</section>

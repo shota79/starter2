@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI Component</title>
+    <link rel="stylesheet" href="css/pualugin.css">
+    <link rel="stylesheet" href="css/pualugin-theme.css">
+</head>
+<body>
+    <section class="pualugin">
+        <header class="pualugin__header">
+            <div class="pualugin__logo">
+                Pualugin
+                <button class="pualugin__menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="pualugin__nav">
+                <span class="pualugin__nav-status" data-element="nav__status" role="button">메뉴열림</span>
+                <ul class="pualugin__nav-ul" data-element="nav__ul">
+                    <li class="pualugin__nav-li">
+                        <a href="#toggle" class="pualugin__nav-anchor" data-element="nav__anchor">toggle</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#tooltip" class="pualugin__nav-anchor" data-element="nav__anchor">tooltip</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#tab" class="pualugin__nav-anchor" data-element="nav__anchor">tab</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#accordion" class="pualugin__nav-anchor" data-element="nav__anchor">accordion</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#sticky" class="pualugin__nav-anchor" data-element="nav__anchor">sticky</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#modal" class="pualugin__nav-anchor" data-element="nav__anchor">modal</a>
+                    </li>
+                    <li class="pualugin__nav-li">
+                        <a href="#checkbox" class="pualugin__nav-anchor" data-element="nav__anchor">checkbox</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="pualugin__contents">
+            <partial src="toggle.html" title="toggle"></partial>
+            <partial src="tooltip.html" title="toggle"></partial>
+            <partial src="tab.html" title="toggle"></partial>
+            <partial src="accordion.html" title="toggle"></partial>
+            <partial src="sticky.html" title="toggle"></partial>
+            <partial src="modal.html" title="toggle"></partial>
+            <partial src="checkbox.html" title="toggle"></partial>
+        </div>
+    </section>
+
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/highlight.pack.js"></script>
+    <script src="js/pualugin.js"></script>
+    <script src="js/theme/pualugin-theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<div id="accordion" class="plugin">
+<h1 class="plugin__title">Accordion</h1>
+<!-- CODE -->
+<p class="plugin__description">- CODE / 기본</p>
+<div class="code">
+<div class="code__language">HTML</div>
+<pre>
+<code class="html">
+  &lt;ul class="pualugin-accordion" data-element="accordion"&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;
+        accordion__anchor1
+      &lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;
+        accordion__anchor2
+      &lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;
+        accordion__anchor3
+      &lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- CODE -->
+
+<!-- RESULT -->
+<p class="plugin__description">- RESULT</p>
+<ul class="pualugin-accordion" data-element="accordion">
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">accordion__anchor1</a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+        아코디언 내용입니다.
+    </div>
+  </li>
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">accordion__anchor2</a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+        아코디언 내용입니다.
+    </div>
+  </li>
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">accordion__anchor3</a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+        아코디언 내용입니다.
+    </div>
+  </li>
+</ul>
+<!-- //RESULT -->
+
+<!-- CODE -->
+<p class="plugin__description">- CODE / 옵션 추가</p>
+<div class="code">
+<div class="code__language">HTML</div>
+<pre>
+<code class="html">
+  &lt;ul class="pualugin-accordion" data-element="accordion" data-options='{ "autoFold": false }'&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;accordion__anchor1&lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;accordion__anchor2&lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="pualugin-accordion__item" data-element="accordion__item"&gt;
+      &lt;a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor"&gt;accordion__anchor3&lt;/a&gt;
+      &lt;div class="pualugin-accordion__panel" data-element="accordion__panel"&gt;
+        아코디언 내용입니다.
+      &lt;/div&gt;
+    &lt;/li>
+  &lt;/ul>
+</code>
+</pre>
+</div>
+<!-- //CODE -->
+
+<!-- RESULT -->
+<p class="plugin__description">- RESULT</p>
+<ul class="pualugin-accordion" data-element="accordion" data-options='{ "autoFold": false }'>
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">
+      accordion__anchor1
+    </a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+      아코디언 내용입니다.
+    </div>
+  </li>
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">
+      accordion__anchor2
+    </a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+      아코디언 내용입니다.
+    </div>
+  </li>
+  <li class="pualugin-accordion__item" data-element="accordion__item">
+    <a href="#" class="pualugin-accordion__anchor" data-element="accordion__anchor">
+      accordion__anchor3
+    </a>
+    <div class="pualugin-accordion__panel" data-element="accordion__panel">
+      아코디언 내용입니다.
+    </div>
+  </li>
+</ul>
+<!-- //RESULT -->
+
+<!-- Options -->
+<div class="pualugin-options">
+  <div class="pualugin-options__title">Options</div>
+  <ul class="pualugin-options__ul">
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        mode
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: String
+        </li>
+        <li class="pualugin-options__li">
+          default: static 중 선택
+        </li>
+        <li class="pualugin-options__li">
+          description: static, slide, fade 중 선택
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        speed
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: Number
+        </li>
+        <li class="pualugin-options__li">
+          default: 300
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        easing
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: String
+        </li>
+        <li class="pualugin-options__li">
+          default: swing
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        isInitActive
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: Boolean
+        </li>
+        <li class="pualugin-options__li">
+          default: true
+        </li>
+        <li class="pualugin-options__li">
+          description: 초기화시 패널 오픈여부
+        </li>
+      </ul>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        initIndex
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: Number
+        </li>
+        <li class="pualugin-options__li">
+          default: 0
+        </li>
+        <li class="pualugin-options__li">
+          description: 초기화시 오픈될 패널의 index
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        autoFold
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: Boolean
+        </li>
+        <li class="pualugin-options__li">
+          default: true
+        </li>
+        <li class="pualugin-options__li">
+          description: 탭 클릭 시 기존에 열려있던 탭 닫기
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        autoScroll
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: Boolean
+        </li>
+        <li class="pualugin-options__li">
+          default: false
+        </li>
+        <li class="pualugin-options__li">
+          description: 선택한 탭의 위치로 자동 스크롤
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        activeClassName
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          type: String
+        </li>
+        <li class="pualugin-options__li">
+          default: is-active
+        </li>
+        <li class="pualugin-options__li">
+          description: 아코디언 활성화 클래스
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- //Options -->
+
+<!-- Event -->
+<p class="plugin__description">
+  - Event
+</p>
+<div class="code">
+<span class="code__language"><i class="fas fa-code"></i>JAVASCRIPT</span>
+<pre>
+<code class="javascript">
+  var yourVariable = $('.your-element');
+
+  yourVariable.on('beforeChange', function( event, plugin, anchor, panel ){
+      /* your code ... */
+  })
+  
+  yourVariable.on('afterChange', function( event, plugin, anchor, panel ){
+      /* your code ... */
+  })
+</code>
+</pre>
+</div>
+<div class="pualugin-options">
+  <ul class="pualugin-options__ul">
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        beforeChange
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          arguments: event, plugin, anchor
+        </li>
+        <li class="pualugin-options__li">
+          description: 패널 오픈 전 실행될 함수
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        afterChange
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          arguments: event, plugin, anchor
+        </li>
+        <li class="pualugin-options__li">
+          description: 패널 오픈 후 실행될 함수
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- //Event -->
+
+<!-- Method -->
+<p class="plugin__description">
+  - Method
+</p>
+<div class="code">
+<span class="code__language"><i class="fas fa-code"></i>JAVASCRIPT</span>
+<pre>
+<code class="javascript">
+  var yourVariable = $('.your-element').data('plugin_accordion');
+
+  yourVariable.go(1); //OR
+  yourVariable.go(2, true); //OR
+  yourVariable.go(0, false); //OR
+
+  yourVariable.destroy();
+
+  yourVariable.reInit();
+</code>
+</pre>
+</div>
+<div class="pualugin-options">
+  <ul class="pualugin-options__ul">
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        go
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          arguments: index, withScroll(Boolean): 선택된 탭의 상단으로 스크롤 이동 여부
+        </li>
+        <li class="pualugin-options__li">
+          description: 패널 열기
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        destroy
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          arguments: none
+        </li>
+        <li class="pualugin-options__li">
+          description: 플러그인 제거
+        </li>
+      </ul>
+    </li>
+    <li class="pualugin-options__li">
+      <div class="pualugin-options__name">
+        reInit
+      </div>
+      <ul class="pualugin-options__ul">
+        <li class="pualugin-options__li">
+          arguments: none
+        </li>
+        <li class="pualugin-options__li">
+          description: 플러그인 제거 후 생성
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- //Method -->
+
+<!-- Initialzied -->
+<p class="plugin__description">
+  - <span>모든 플러그인은 기본적으로 페이지 렌더링시 Initialized 됩니다.</span> <span>개별적(비동기 마크업 구현) Initialize 필요한 경우 아래와 같이 진행합니다.</span>
+</p>
+<div class="code">
+<span class="code__language"><i class="fas fa-code"></i>JAVASCRIPT</span>
+<pre>
+<code class="javascript">
+  $('.your-element').accordion(); // Initialize
+</code>
+</pre>
+</div>
+<!-- Initialzied -->
+</div>

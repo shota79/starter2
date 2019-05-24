@@ -1,0 +1,90 @@
+// Pualugin theme browser size
+@mixin screenSizeMobile() {
+    @media only screen and (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin screenSizeTablet() {
+    @media only screen and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin screenSizeDeskTop() {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+//breakpoint ( Mobile first )
+@mixin breakpoint($point) {
+    @if $point==large {
+        @media only screen and (min-width: 1366px) {
+            @content;
+        }
+    }
+
+    @else if $point==desktop {
+        @media only screen and (min-width: 1025px) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+}
+
+
+// flex
+@mixin flex($align, $justify) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+}
+
+// vertical center
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// vender prefix
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+// font-face
+@mixin font-face($name, $file) {
+    @font-face {
+        font-family: "#{$name}";
+        src: url("../fonts/#{$file}.eot");
+        src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/#{$file}.woff") format("woff"),
+        url("../fonts/#{$file}.ttf") format("truetype"),
+        url("../fonts/#{$file}.svg?#webfont") format("svg");
+    }
+}
+
+// Reset Style Button
+@mixin resetButton() {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
